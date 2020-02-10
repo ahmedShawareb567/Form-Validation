@@ -1,0 +1,101 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "~bootstrap/scss/bootstrap.scss";
+
+@mixin all {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font: normal 1rem sans-serif;
+}
+body {
+  @include all;
+  background-color: #d2fafb;
+  .registerSec {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    form {
+      position: relative;
+      height: auto;
+      width: 90%;
+      background-color: #fff;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      transition: height 0.2a ease-in-out;
+      h2 {
+        display: inline-block;
+        padding: 1rem 0rem;
+        margin-top: 0rem;
+      }
+      input {
+        border: 2px solid #bdf2d5;
+        height: 3rem;
+        &:focus {
+          box-shadow: 0rem 0rem 0rem 0rem transparent;
+        }
+        &.error_class {
+          border-color: #fa163f;
+          background-color: #fdc6d0;
+        }
+      }
+      input[type="submit"] {
+        width: 10rem;
+        height: 4rem;
+        border-radius: 0.2rem;
+        background-color: #fa163f;
+        border-color: transparent;
+        color: #fff;
+        font-size: 1.2rem;
+        &:focus {
+          border-color: transparent;
+          box-shadow: 0rem 0rem 0rem 0rem transparent;
+          outline: none;
+        }
+      }
+      .erroSec {
+        position: relative;
+        width: 100%;
+        height: 3rem;
+        ul {
+          display: block;
+          width: 100%;
+          margin: 0rem auto;
+          text-align: center;
+          list-style: none;
+          padding: 0rem;
+          li {
+            display: inline-block;
+            margin-right: 1rem;
+            color: #12cad6;
+            font-size: 0.8rem;
+            text-align: center;
+            p {
+              margin: 0rem;
+              padding: 0rem;
+              text-align: center;
+              i {
+                text-align: center;
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                background-color: #fa163f;
+                line-height: 1rem;
+                font-size: 0.7rem;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
